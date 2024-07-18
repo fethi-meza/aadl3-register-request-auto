@@ -427,8 +427,7 @@ yarn publish_app
 
   
 
-## الاتصال
+
 
   
 
-لأي أسئلة أو ملاحظات، يرجى الاتصال بالمؤلف على [boukemoucheidriss@gmail.com](mailto:boukemoucheidriss@gmail.com).
