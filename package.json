@@ -1,0 +1,59 @@
+{
+  "author": {
+    "name": "idriss boukmouche",
+    "email": "boukemoucheidriss@gmail.com"
+  },
+  "homepage": "https://github.com/TerminalDZ/aadl3-register-request",
+  "name": "aadl3",
+  "version": "1.0.0",
+  "packageManager": "yarn@1.22.19",
+  "main": "main.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --publish=never",
+    "publish_app": "electron-builder --publish always"
+  },
+  "dependencies": {
+    "play-sound": "^1.1.6",
+    "fs": "^0.0.1-security"
+  },
+  "build": {
+    "appId": "com.aadl3.request",
+    "win": {
+      "icon": "./logo.png",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "linux": {
+      "icon": "./logo.png",
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "maintainer": "@fethiDobe"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "releaseType": "release"
+      }
+    ],
+    "files": [
+      "main.js",
+      "index.html",
+      "notification.wav",
+      "aadl3.js",
+      "info.json",
+      "package.json"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^31.2.1",
+    "electron-builder": "^24.13.3"
+  }
+}
